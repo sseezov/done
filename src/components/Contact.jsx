@@ -29,8 +29,7 @@ const Contact = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FontAwesomeIcon icon={faVk} color="#ffd700" />
-                  vk.com/sseezov
+                  <FontAwesomeIcon icon={faVk} color="#ffd700" /> vk.com/sseezov
                 </a>
               </h2>
             </li>
@@ -42,8 +41,7 @@ const Contact = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FontAwesomeIcon icon={faTelegram} color="#ffd700" />
-                  @sseezov
+                  <FontAwesomeIcon icon={faTelegram} color="#ffd700" /> @sseezov
                 </a>
               </h2>
             </li>
@@ -53,21 +51,8 @@ const Contact = () => {
                   className="hover:bg-violet-700 text-2xl sm:text-4xl font-bold text-[#ccd6f6]"
                   href="mailto: sseezov@mail.ru"
                 >
-                  <FontAwesomeIcon icon={faAt} color="#ffd700" />
+                  <FontAwesomeIcon icon={faAt} color="#ffd700" />{" "}
                   sseezov@mail.ru
-                </a>
-              </h2>
-            </li>
-            <li>
-              <h2>
-                <a
-                  className="hover:bg-violet-700 text-2xl sm:text-4xl font-bold text-[#ccd6f6]"
-                  href="https://www.facebook.com/sseezov/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FontAwesomeIcon icon={faFacebook} color="#ffd700" />
-                  facebook.com/sseezov
                 </a>
               </h2>
             </li>
@@ -79,7 +64,7 @@ const Contact = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FontAwesomeIcon icon={faPhone} color="#ffd700" />+ 7 951 580
+                  <FontAwesomeIcon icon={faPhone} color="#ffd700" /> +7 951 580
                   8134
                 </a>
               </h2>
