@@ -11,7 +11,7 @@ const About = () => {
       className="w-full h-screen min-h-screen bg-[#0a192f] text-gray-300 p-0 m-0"
     >
       <div className="flex flex-col justify-center items-center w-full h-full">
-        <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
+        <div className="max-w-[1000px] w-full grid grid-cols-2 md:gap-8">
           <div className="sm:text-right pb-8 pl-4">
             <p className="text-4xl font-bold inline border-b-4 border-yellow-400">
               О СЕБЕ
@@ -22,7 +22,7 @@ const About = () => {
               onClick={() => {
                 setToggleAbout(!toggleAbout);
               }}
-              className="text-4xl font-bold inline text-yellow-200 hover:text-yellow-400"
+              className="text-4xl animate-pulse font-bold inline text-yellow-200 hover:text-yellow-400"
             >
               {toggleAbout ? ">" : "<"}
             </button>
@@ -70,7 +70,8 @@ const About = () => {
                   >
                     theodinproject.com
                   </a>
-                  , курсы по Реакту и Редаксу в{" "}
+                  , немного тайпскрипта и Node.js на Udemy, курсы по Реакту и
+                  Редаксу в{" "}
                   <a
                     rel="noreferrer"
                     target="_blank"

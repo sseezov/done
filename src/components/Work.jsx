@@ -14,7 +14,7 @@ const Work = () => {
             ОПЫТ РАБОТЫ И ПРОЕКТЫ
           </p>
 
-          <div className="p-8 md:min-h-[370px] md:min-w-[1200px] sm:flex-col">
+          <div className="p-8 min-h-[500px] md:min-h-[370px] md:min-w-[1200px] sm:flex-col">
             <h1 className="text-xl md:text-2xl font-bold inline text-gray-300">
               {workData[index].name}
             </h1>
