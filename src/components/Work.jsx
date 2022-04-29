@@ -8,11 +8,14 @@ const Work = () => {
 
   return (
     <div name="work" className="w-full md:h-screen text-gray-300 bg-[#0a192f]">
-      <div className="max-w-[1000px] mx-auto p-4 flex justify-center w-full h-full">
+      <div className="max-w-[1000px] mx-auto p-4 flex justify-center w-full h-full ">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-yellow-400">
-            ОПЫТ РАБОТЫ И ПРОЕКТЫ
-          </p>
+          <div className="ml-[33px]">
+            {" "}
+            <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-yellow-400">
+              ОПЫТ РАБОТЫ И ПРОЕКТЫ
+            </p>
+          </div>
 
           <div className="p-8 min-h-[500px] md:min-h-[370px] md:min-w-[1200px] sm:flex-col">
             <h1 className="text-xl md:text-2xl font-bold inline text-gray-300">
@@ -20,7 +23,7 @@ const Work = () => {
             </h1>
             <div className="md:flex md:flex-row">
               <img
-                className="ml-[20px] max-h-[200px] md:max-h-[250px] rounded-xl p-2"
+                className="m-auto max-h-[200px] md:max-h-[250px] rounded-xl p-2"
                 src={workData[index].image}
                 alt={workData[index].name}
               />

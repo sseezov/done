@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import MyPic from "../assets/UTgWXhK6jQg.jpg";
-import aboutStorage from "./aboutData";
 
 const About = () => {
   const [toggleAbout, setToggleAbout] = useState(true);
@@ -17,21 +16,12 @@ const About = () => {
               О СЕБЕ
             </p>
           </div>
-          <div>
-            <button
-              onClick={() => {
-                setToggleAbout(!toggleAbout);
-              }}
-              className="text-4xl animate-pulse font-bold inline text-yellow-200 hover:text-yellow-400"
-            >
-              {toggleAbout ? ">" : "<"}
-            </button>
-          </div>
+          <div></div>
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 md:gap-8 md:px-4">
           <div className="sm:text-right">
             <img
-              className="ml-[20px] flex items-center justify-around md:float-right w-[160px] rounded-xl  sm:w-[180px] md:w-[280px]"
+              className="m-auto flex items-center justify-around md:float-right w-[160px] rounded-xl  sm:w-[180px] md:w-[280px]"
               src={MyPic}
               alt="это я"
             />
@@ -39,7 +29,7 @@ const About = () => {
 
           <div>
             {toggleAbout ? (
-              <p className="float-left text-base sm:text-base md:text-xl">
+              <p className="p-4 float-left text-base sm:text-base md:text-xl">
                 Мне 31 год, у меня 2 высших очных образования и аспирантура за
                 плечами. Восемь лет своей жизни я занимался наукой,
                 преимущественно философией, и преподаванием, но теперь
@@ -51,7 +41,7 @@ const About = () => {
               </p>
             ) : (
               <div>
-                <p className="float-left text-base sm:text-base md:text-xl pb-4">
+                <p className="p-4 float-left text-base sm:text-base md:text-xl pb-4">
                   Я программист самоучка, прошел курсы верстки и js на{" "}
                   <a
                     rel="noreferrer"
@@ -110,7 +100,7 @@ const About = () => {
                   </a>
                   .
                 </p>
-                <p className="float-left text-base sm:text-base md:text-xl">
+                <p className="p-4 float-left text-base sm:text-base md:text-xl">
                   Меня интересует, прежде всего, возможность быстрого роста как
                   специалиста, а потому я ищу мощную команду, чтобы{" "}
                   <strong className="text-red-600">дичайше</strong>, например,
@@ -118,6 +108,14 @@ const About = () => {
                 </p>
               </div>
             )}
+            <button
+              onClick={() => {
+                setToggleAbout(!toggleAbout);
+              }}
+              className="p-4 text-4xl animate-pulse font-bold inline text-yellow-200 hover:text-yellow-400"
+            >
+              {toggleAbout ? ">" : "<"}
+            </button>
           </div>
         </div>
       </div>
