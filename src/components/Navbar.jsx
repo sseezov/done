@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub } from "react-icons/fa";
+import englishFlag from "./../assets/pngwing.com.png";
+import russianFlag from "./../assets/Flag_of_Russia.png";
 
 import hh from "./../assets/hh.png";
 
@@ -8,6 +10,7 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+  const [eng, setEng] = useState(true);
 
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
@@ -40,6 +43,19 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+      <button
+        onClick={() => {
+          setEng(!eng);
+        }}
+        className=" text-gray-300  flex flex-row p-2"
+      >
+        {eng ? (
+          <img src={englishFlag} className="w-[40px] pr-2" alt="flag" />
+        ) : (
+          <img src={russianFlag} className="w-[40px] pr-2" alt="flag" />
+        )}
+        выбрать язык
+      </button>
 
       {/* Hamburger */}
       <div onClick={handleClick} className="md:hidden z-10">

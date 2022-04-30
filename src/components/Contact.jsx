@@ -16,10 +16,10 @@ const Contact = () => {
     >
       <div>
         <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
-          Связаться со мной
+          СВЯЗАТЬСЯ СО МНОЙ
         </p>
         <br />
-        <ul className="pt-4">
+        <ul className="pt-4 pl-3">
           <ul>
             <li>
               <h2>

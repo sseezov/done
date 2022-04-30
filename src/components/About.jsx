@@ -112,7 +112,7 @@ const About = () => {
               onClick={() => {
                 setToggleAbout(!toggleAbout);
               }}
-              className="p-4 text-4xl animate-pulse font-bold inline text-yellow-200 hover:text-yellow-400"
+              className="pl-4 text-4xl font-bold inline text-yellow-200 hover:text-yellow-400"
             >
               {toggleAbout ? ">" : "<"}
             </button>
