@@ -7,14 +7,11 @@ const Work = () => {
 
   return (
     <div name="work" className="w-full md:h-screen text-gray-300 bg-[#0a192f]">
-      <div className="max-w-[1000px] mx-auto p-4 flex justify-center w-full h-full ">
-        <div className="pb-8">
-          <div className="ml-[33px]">
-            {" "}
-            <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-yellow-400">
-              ОПЫТ РАБОТЫ И ПРОЕКТЫ
-            </p>
-          </div>
+      <div className="max-w-[1000px] mx-auto px-4 flex justify-center w-full h-full ">
+        <div className="ml-[33px]">
+          <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-yellow-400">
+            ОПЫТ РАБОТЫ И ПРОЕКТЫ
+          </p>
 
           <div className="p-8 min-h-[500px] md:min-h-[370px] md:min-w-[1200px] sm:flex-col">
             <a href={workData[index].link} target="_blank" rel="noreferrer">

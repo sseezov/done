@@ -8,13 +8,13 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-[#0a192f] flex justify-center items-center p-4"
+      className="w-full h-screen bg-[#0a192f] flex justify-center items-center"
     >
-      <div>
-        <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
+      <div className="p-12">
+        <p className="text-4xl inline font-bold border-b-4 border-pink-600 text-gray-300">
           СВЯЗАТЬСЯ СО МНОЙ
         </p>
-        <br />
+
         <ul className="pt-4 pl-3">
           <ul>
             <li>
