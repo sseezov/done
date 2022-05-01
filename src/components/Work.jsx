@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import workStorage from "./workData";
 
@@ -18,9 +17,12 @@ const Work = () => {
           </div>
 
           <div className="p-8 min-h-[500px] md:min-h-[370px] md:min-w-[1200px] sm:flex-col">
-            <h1 className="text-xl md:text-2xl font-bold inline text-gray-300">
-              {workData[index].name}
-            </h1>
+            <a href={workData[index].link} target="_blank" rel="noreferrer">
+              <h1 className="text-xl md:text-2xl font-bold inline text-gray-300 hover:text-purple-300">
+                {workData[index].name}
+              </h1>
+            </a>
+
             <div className="md:flex md:flex-row">
               <img
                 className="m-auto max-h-[200px] md:max-h-[250px] rounded-xl p-2"

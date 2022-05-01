@@ -4,58 +4,57 @@ import englishFlag from "./../assets/pngwing.com.png";
 import russianFlag from "./../assets/Flag_of_Russia.png";
 
 import hh from "./../assets/hh.png";
-
 import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
-  const [eng, setEng] = useState(true);
+  // const [eng, setEng] = useState(true);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
+    <div className="fixed w-full h-[70px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
       {/* menu */}
       <ul className="hidden md:flex">
-        <li className="hover:bg-violet-700">
+        <li className="hover:underline underline-offset-8 decoration-yellow-400 decoration-4">
           <Link to="home" smooth={true} duration={500}>
-            Главная
+            В начало
           </Link>
         </li>
-        <li className="hover:bg-violet-700">
+        <li className="hover:underline underline-offset-8 decoration-yellow-400 decoration-4">
           <Link to="about" smooth={true} duration={500}>
             О себе
           </Link>
         </li>
-        <li className="hover:bg-violet-700">
+        <li className="hover:underline underline-offset-8 decoration-yellow-400 decoration-4">
           <Link to="skills" smooth={true} duration={500}>
             Навыки
           </Link>
         </li>
-        <li className="hover:bg-violet-700">
+        <li className="hover:underline underline-offset-8 decoration-yellow-400 decoration-4">
           <Link to="work" smooth={true} duration={500}>
             Опыт работы
           </Link>
         </li>
 
-        <li className="hover:bg-violet-700">
+        <li className="hover:underline underline-offset-8 decoration-yellow-400 decoration-4">
           <Link to="contact" smooth={true} duration={500}>
             Контакты
           </Link>
         </li>
       </ul>
-      <button
+      {/* <button
         onClick={() => {
           setEng(!eng);
         }}
-        className=" text-gray-300  flex flex-row p-2"
+        className=" text-gray-300  flex flex-row p-2 hover:underline underline-offset-8 decoration-yellow-400 decoration-4"
       >
+        Сменить язык{" "}
         {eng ? (
-          <img src={englishFlag} className="w-[40px] pr-2" alt="flag" />
+          <img src={englishFlag} className="w-[40px] pl-2" alt="flag" />
         ) : (
-          <img src={russianFlag} className="w-[40px] pr-2" alt="flag" />
+          <img src={russianFlag} className="w-[40px] pl-2" alt="flag" />
         )}
-        выбрать язык
-      </button>
+      </button> */}
 
       {/* Hamburger */}
       <div onClick={handleClick} className="md:hidden z-10">
@@ -72,7 +71,7 @@ const Navbar = () => {
       >
         <li className="py-6 text-4xl ">
           <Link onClick={handleClick} to="home" smooth={true} duration={500}>
-            Главная
+            В начало
           </Link>
         </li>
         <li className="py-6 text-4xl">

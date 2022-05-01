@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  faFacebook,
-  faTelegram,
-  faVk,
-} from "@fortawesome/free-brands-svg-icons";
+import { faTelegram, faVk } from "@fortawesome/free-brands-svg-icons";
 import { faAt, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
