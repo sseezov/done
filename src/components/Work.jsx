@@ -13,7 +13,7 @@ const Work = () => {
             ОПЫТ РАБОТЫ И ПРОЕКТЫ
           </p>
 
-          <div className="p-8 min-h-[500px] md:min-h-[370px] md:min-w-[1200px] sm:flex-col">
+          <div className="md:p-8 pt-2 min-h-[500px] md:min-h-[370px] md:min-w-[1200px] sm:flex-col">
             <a href={workData[index].link} target="_blank" rel="noreferrer">
               <h1 className="text-xl md:text-2xl font-bold inline text-gray-300 hover:text-purple-300">
                 {workData[index].name}

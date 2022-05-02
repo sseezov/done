@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full h-screen min-h-screen bg-[#0a192f] text-gray-300 p-0 m-0"
+      className="w-full h-screen min-h-screen bg-[#0a192f] text-gray-300"
     >
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 md:gap-8">
@@ -40,7 +40,7 @@ const About = () => {
               </p>
             ) : (
               <div>
-                <p className="p-4 float-left text-base sm:text-base md:text-xl pb-4">
+                <p className="px-4 float-left text-base sm:text-base md:text-xl pb-4">
                   Я программист самоучка, прошел курсы верстки и js на{" "}
                   <a
                     rel="noreferrer"
@@ -99,7 +99,7 @@ const About = () => {
                   </a>
                   .
                 </p>
-                <p className="p-4 float-left text-base sm:text-base md:text-xl">
+                <p className="px-4 float-left text-base sm:text-base md:text-xl">
                   Меня интересует, прежде всего, возможность быстрого роста как
                   специалиста, а потому я ищу мощную команду, чтобы{" "}
                   <strong className="text-red-600">дичайше</strong>, например,
