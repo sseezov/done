@@ -9,7 +9,7 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
-  // const [eng, setEng] = useState(true);
+  const [lang, setLang] = useState("en");
 
   return (
     <div className="fixed w-full h-[70px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
@@ -42,19 +42,20 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
-      {/* <button
+      <button
         onClick={() => {
-          setEng(!eng);
+          setLang(lang === "en" ? "ru" : "en");
+          console.log(lang);
         }}
         className=" text-gray-300  flex flex-row p-2 hover:underline underline-offset-8 decoration-yellow-400 decoration-4"
       >
         Сменить язык{" "}
-        {eng ? (
+        {lang === "en" ? (
           <img src={englishFlag} className="w-[40px] pl-2" alt="flag" />
         ) : (
           <img src={russianFlag} className="w-[40px] pl-2" alt="flag" />
         )}
-      </button> */}
+      </button>
 
       {/* Hamburger */}
       <div onClick={handleClick} className="md:hidden z-10">
