@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import MyPic from "../assets/UTgWXhK6jQg.jpg";
+import { LangContext } from "./context";
+import { translationAbout } from "./translation";
 
 const About = () => {
   const [toggleAbout, setToggleAbout] = useState(true);
+  let { lang } = useContext(LangContext);
 
   return (
     <div

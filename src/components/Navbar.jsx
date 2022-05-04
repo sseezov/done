@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { FaBars, FaTimes, FaGithub } from "react-icons/fa";
 import englishFlag from "./../assets/pngwing.com.png";
 import russianFlag from "./../assets/Flag_of_Russia.png";
 
 import hh from "./../assets/hh.png";
 import { Link } from "react-scroll";
+import { LangContext } from "./context";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
-  const [lang, setLang] = useState("en");
+  let { lang, setLang } = useContext(LangContext);
 
   return (
     <div className="fixed w-full h-[70px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
