@@ -1,7 +1,5 @@
 import React, { useContext, useState } from "react";
 import { FaBars, FaTimes, FaGithub } from "react-icons/fa";
-import englishFlag from "./../assets/pngwing.com.png";
-import russianFlag from "./../assets/Flag_of_Russia.png";
 import { LangContext } from "./context";
 import { translationNavbar } from "./translation";
 import hh from "./../assets/hh.png";
@@ -46,14 +44,9 @@ const Navbar = () => {
         onClick={() => {
           setLang(lang === "en" ? "ru" : "en");
         }}
-        className=" text-gray-300  flex flex-row p-2 hover:underline underline-offset-8 decoration-yellow-400 decoration-4"
+        className=" text-gray-300  flex flex-row p-2 md:hover:underline underline-offset-8 decoration-yellow-400 decoration-4"
       >
         {translationNavbar[lang].switch}
-        {/* {lang === "en" ? (
-          <img src={englishFlag} className="w-[40px] pl-2" alt="flag" />
-        ) : (
-          <img src={russianFlag} className="w-[40px] pl-2" alt="flag" />
-        )} */}
       </button>
 
       {/* Hamburger */}

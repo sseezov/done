@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { faTelegram, faVk } from "@fortawesome/free-brands-svg-icons";
 import { faAt, faPhone } from "@fortawesome/free-solid-svg-icons";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { translationContacts } from "./translation";
+import { LangContext } from "./context";
 
 const Contact = () => {
+  let { lang } = useContext(LangContext);
   return (
     <div
       name="contact"
@@ -12,10 +14,10 @@ const Contact = () => {
     >
       <div className="p-12">
         <p className="text-4xl inline font-bold border-b-4 border-pink-600 text-gray-300">
-          СВЯЗАТЬСЯ СО МНОЙ
+          {translationContacts[lang].contactMe}
         </p>
 
-        <ul className="pt-4 pl-3">
+        <ul className="pt-4">
           <ul>
             <li>
               <h2>

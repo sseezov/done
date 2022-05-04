@@ -2,7 +2,7 @@ export const translationHome = {
   en: {
     hi: "Hi, my name is",
     name: "Sergey Sizov",
-    job: "I'm a frontend web-developer",
+    job: "I'm a Front-end web-developer",
     next: "Look next",
   },
   ru: {
@@ -17,16 +17,15 @@ export const translationAbout = {
   en: {
     about: "ABOUT",
     text1:
-      "I am 31 years old, i have 2 full-time higher education and finished postgraduate study. For eight years of my life i was engaged in science, mainly philosophy, and teaching, but now i find strong interested in IT, although i see philosophy here as well. Programming for me is a demiurgical practice, where numbers mediate logos, and the eternal sun of the noematic opens up in digitalization, understood as the rediscovery of Pythagorean practices.",
-    text2a:
-      "I am a self-taught programmer, i took courses on web-design and js on ",
+      "I am 31 years old self-taught programmer from Russia, I have 2 full-time higher education and finished postgraduate study. For eight years of my life I was engaged in science, mainly philosophy, and teaching, but now I find strong interest in IT, although I see philosophy here as well. Programming for me is a demiurgical practice, where numbers mediate logos, and the eternal sun of the noematic opens up in digitalization, understood as the rediscovery of Pythagorean practices.",
+    text2a: "I took courses on web-design and js on ",
     text2b:
       ", some typescript and Node.js on Udemy, courses on React and Redux on ",
     text2c: " and in general on YouTube. Solved many challenges on ",
     text2d: " and ",
     text2e: ". Read books, did projects, et cetera. Here is my ",
     text2f:
-      "First of all, i am interested in the possibility of rapid growth as a specialist, and therefore i am looking for a powerful team so i could level up fast and qualitatively.",
+      "First of all, I am interested in the possibility of rapid growth as a specialist, and therefore I am looking for a powerful team so I could level up fast and qualitatively.",
   },
   ru: {
     about: "О СЕБЕ",
@@ -62,5 +61,36 @@ export const translationNavbar = {
     works: "Опыт работы",
     contacts: "Контакты",
     switch: "Cменить язык",
+  },
+};
+
+export const translationWork = {
+  en: {
+    work: "MY PROJECTS",
+    page: "page",
+  },
+  ru: {
+    work: "ОПЫТ РАБОТЫ И ПРОЕКТЫ",
+    page: "страница",
+  },
+};
+
+export const translationSkills = {
+  en: {
+    skills: "SKILLS",
+    technologies: "These are technologies, that I work with",
+  },
+  ru: {
+    skills: "НАВЫКИ",
+    technologies: "Вот технологии, с которыми я работаю",
+  },
+};
+
+export const translationContacts = {
+  en: {
+    contactMe: "CONTACT ME",
+  },
+  ru: {
+    contactMe: "СВЯЗАТЬСЯ СО МНОЙ",
   },
 };

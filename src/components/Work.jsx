@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { LangContext } from "./context";
 import workStorage from "./workData";
+import { translationWork } from "./translation";
 
 const Work = () => {
   const [index, setIndex] = useState(0);
   const [workData, setWorkData] = useState(workStorage);
+  let { lang } = useContext(LangContext);
 
   return (
     <div
@@ -13,13 +16,13 @@ const Work = () => {
       <div className="max-w-[1000px] m-auto p-4 flex items-center justify-center w-full h-full ">
         <div className="ml-[33px]">
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-yellow-400">
-            ОПЫТ РАБОТЫ И ПРОЕКТЫ
+            {translationWork[lang].work}
           </p>
 
           <div className="md:p-8 pt-2 min-h-[500px] md:min-h-[370px] md:min-w-[1200px] sm:flex-col">
             <a href={workData[index].link} target="_blank" rel="noreferrer">
               <h1 className="text-xl md:text-2xl font-bold inline text-gray-300 hover:text-purple-300">
-                {workData[index].name}
+                {workData[index].name[lang]}
               </h1>
             </a>
 
@@ -27,10 +30,10 @@ const Work = () => {
               <img
                 className="m-auto max-h-[200px] md:max-h-[250px] rounded-xl p-2"
                 src={workData[index].image}
-                alt={workData[index].name}
+                alt={workData[index].name[lang]}
               />
               <p className="text-base md:text-xl text-gray-300 md:p-2">
-                {workData[index].text}
+                {workData[index].text[lang]}
               </p>
             </div>
           </div>
@@ -49,9 +52,9 @@ const Work = () => {
                 {"<"}
               </button>
             )}
-            <div className="font-bold text-gray-300 text-xl">{`${
-              index + 1
-            } страница`}</div>
+            <div className="font-bold text-gray-300 text-xl">
+              {`${index + 1} ` + translationWork[lang].page}
+            </div>
 
             {index < workData.length - 1 ? (
               <button
