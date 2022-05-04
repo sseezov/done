@@ -2,10 +2,10 @@ import React, { useContext, useState } from "react";
 import { FaBars, FaTimes, FaGithub } from "react-icons/fa";
 import englishFlag from "./../assets/pngwing.com.png";
 import russianFlag from "./../assets/Flag_of_Russia.png";
-
+import { LangContext } from "./context";
+import { translationNavbar } from "./translation";
 import hh from "./../assets/hh.png";
 import { Link } from "react-scroll";
-import { LangContext } from "./context";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -18,44 +18,42 @@ const Navbar = () => {
       <ul className="hidden md:flex">
         <li className="hover:underline underline-offset-8 decoration-yellow-400 decoration-4">
           <Link to="home" smooth={true} duration={500}>
-            В начало
+            {translationNavbar[lang].main}
           </Link>
         </li>
         <li className="hover:underline underline-offset-8 decoration-yellow-400 decoration-4">
           <Link to="about" smooth={true} duration={500}>
-            О себе
+            {translationNavbar[lang].about}
           </Link>
         </li>
         <li className="hover:underline underline-offset-8 decoration-yellow-400 decoration-4">
           <Link to="skills" smooth={true} duration={500}>
-            Навыки
+            {translationNavbar[lang].skills}
           </Link>
         </li>
         <li className="hover:underline underline-offset-8 decoration-yellow-400 decoration-4">
           <Link to="work" smooth={true} duration={500}>
-            Опыт работы
+            {translationNavbar[lang].works}
           </Link>
         </li>
-
         <li className="hover:underline underline-offset-8 decoration-yellow-400 decoration-4">
           <Link to="contact" smooth={true} duration={500}>
-            Контакты
+            {translationNavbar[lang].contacts}
           </Link>
         </li>
       </ul>
       <button
         onClick={() => {
           setLang(lang === "en" ? "ru" : "en");
-          console.log(lang);
         }}
         className=" text-gray-300  flex flex-row p-2 hover:underline underline-offset-8 decoration-yellow-400 decoration-4"
       >
-        Сменить язык{" "}
-        {lang === "en" ? (
+        {translationNavbar[lang].switch}
+        {/* {lang === "en" ? (
           <img src={englishFlag} className="w-[40px] pl-2" alt="flag" />
         ) : (
           <img src={russianFlag} className="w-[40px] pl-2" alt="flag" />
-        )}
+        )} */}
       </button>
 
       {/* Hamburger */}
@@ -73,30 +71,30 @@ const Navbar = () => {
       >
         <li className="py-6 text-4xl ">
           <Link onClick={handleClick} to="home" smooth={true} duration={500}>
-            В начало
+            {translationNavbar[lang].main}
           </Link>
         </li>
         <li className="py-6 text-4xl">
           {" "}
           <Link onClick={handleClick} to="about" smooth={true} duration={500}>
-            О себе
+            {translationNavbar[lang].about}
           </Link>
         </li>
         <li className="py-6 text-4xl">
           {" "}
           <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
-            Навыки
+            {translationNavbar[lang].skills}
           </Link>
         </li>
         <li className="py-6 text-4xl">
           {" "}
           <Link onClick={handleClick} to="work" smooth={true} duration={500}>
-            Опыт работы
+            {translationNavbar[lang].works}
           </Link>
         </li>
         <li className="py-6 text-4xl">
           <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
-            Контакты
+            {translationNavbar[lang].contacts}
           </Link>
         </li>
       </ul>

@@ -27,7 +27,7 @@ const Home = () => {
             <button className="text-white md:min-w-[221px] font-bold group border-2 px-6 py-3 my-2 flex items-center justify-center hover:bg-yellow-400 hover:border-yellow-400">
               {translationHome[lang].next}
               <span className="group-hover:rotate-90 duration-300">
-                <HiArrowNarrowRight className="ml-3 " />
+                <HiArrowNarrowRight className="ml-3" />
               </span>
             </button>
           </Link>
