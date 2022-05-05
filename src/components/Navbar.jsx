@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
-import { FaBars, FaTimes, FaGithub } from "react-icons/fa";
+import { FaBars, FaTimes, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { LangContext } from "./context";
 import { translationNavbar } from "./translation";
-import hh from "./../assets/hh.png";
+import hh2 from "./../assets/HeadHunter_logo_1_1.svg";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -93,14 +93,20 @@ const Navbar = () => {
       </ul>
 
       {/* Social icons */}
-      <div className="hidden lg:flex fixed flex-col top-[45%] left-0">
+      <div className="hidden lg:flex fixed flex-col top-[40%] left-0">
         <ul>
-          <li className="w-[170px] h-[60px] flex justify-between items-center ml-[-110px] hover:ml-[-10px] duration-300 bg-[#d81921]">
+          <li className="w-[170px] h-[60px] flex justify-between items-center ml-[-110px] hover:ml-[-10px] duration-300 bg-[#d40e18]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href="https://kemerovo.hh.ru/resume/abdb3d94ff09cd003a0039ed1f7a345278784b"
             >
-              Headhunter <img src={hh} alt="hh" style={{ width: 30 }} />
+              Headhunter{" "}
+              <img
+                className="ml-[6px]"
+                src={hh2}
+                alt="hh"
+                style={{ width: 60 }}
+              />
             </a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
@@ -109,6 +115,14 @@ const Navbar = () => {
               href="https://github.com/sseezov"
             >
               Github <FaGithub size={30} />
+            </a>
+          </li>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
+            <a
+              className="flex justify-between items-center w-full text-gray-300"
+              href="https://www.linkedin.com/in/sergey-sizov-2bbb21235"
+            >
+              Linkedin <FaLinkedinIn size={30} />
             </a>
           </li>
         </ul>
