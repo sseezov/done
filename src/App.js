@@ -7,8 +7,10 @@ import Skills from "./components/Skills";
 import Work from "./components/Work";
 import { LangContext } from "./components/context";
 
+const browserLang = window.navigator.language;
+
 function App() {
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useState(/ru/gim.test(browserLang) ? "ru" : "en");
   return (
     <LangContext.Provider value={{ lang, setLang }}>
       <Navbar />

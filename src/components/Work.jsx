@@ -77,4 +77,7 @@ const Work = () => {
   );
 };
 
+//Высоту документа ( $(document).height() ) делим на 100, умножаем на нужный % прокрутки.
+//scrollleft+ (x)
+
 export default Work;
