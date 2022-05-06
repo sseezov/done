@@ -7,7 +7,7 @@ import Skills from "./components/Skills";
 import Work from "./components/Work";
 import { LangContext } from "./components/context";
 
-const browserLang = window.navigator.language;
+const browserLang = window.navigator.language || navigator.userLanguage;
 
 function App() {
   const [lang, setLang] = useState(/ru/gim.test(browserLang) ? "ru" : "en");
