@@ -28,7 +28,7 @@ const Work = () => {
 
             <div className="md:flex md:flex-row">
               <img
-                className="m-auto max-h-[200px] md:max-h-[250px] rounded-xl p-2 hover:scale-150 duration-500"
+                className="m-auto max-h-[200px] md:max-h-[250px] rounded-xl p-2 md:hover:scale-150 duration-500"
                 src={workData[index].image}
                 alt={workData[index].name[lang]}
               />
