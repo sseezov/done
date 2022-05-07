@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import { LangContext } from "./components/context";
+import Work2 from "./components/Work2";
 
 const browserLang = window.navigator.language || navigator.userLanguage;
 
@@ -17,7 +18,7 @@ function App() {
       <Home />
       <About />
       <Skills />
-      <Work />
+      <Work2 />
       <Contact />
     </LangContext.Provider>
   );
