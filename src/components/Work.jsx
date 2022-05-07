@@ -13,7 +13,7 @@ const Work = () => {
       name="work"
       className="w-full pt-4 md:h-screen text-gray-300 bg-[#0a192f]"
     >
-      <div className="max-w-[1000px] m-auto p-4 flex items-center justify-center w-full h-full ">
+      <div className="max-w-[1000px] m-auto p-4 flex items-center justify-center w-full h-full  ">
         <div className="ml-[33px]">
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-yellow-400">
             {translationWork[lang].work}
@@ -28,7 +28,7 @@ const Work = () => {
 
             <div className="md:flex md:flex-row">
               <img
-                className="m-auto max-h-[200px] md:max-h-[250px] rounded-xl p-2"
+                className="m-auto max-h-[200px] md:max-h-[250px] rounded-xl p-2 hover:scale-150 duration-500"
                 src={workData[index].image}
                 alt={workData[index].name[lang]}
               />
@@ -48,7 +48,7 @@ const Work = () => {
                 {"<"}
               </button>
             ) : (
-              <button className="text-[#0a192f] font-bold text-6xl">
+              <button disabled className="text-[#0a192f] font-bold text-6xl">
                 {"<"}
               </button>
             )}
@@ -66,7 +66,7 @@ const Work = () => {
                 {">"}
               </button>
             ) : (
-              <button className="text-[#0a192f] font-bold text-6xl">
+              <button disabled className="text-[#0a192f] font-bold text-6xl">
                 {">"}
               </button>
             )}
