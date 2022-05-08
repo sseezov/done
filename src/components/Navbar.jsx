@@ -10,7 +10,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[70px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
+    <div className="w-full h-[70px] flex z-50 fixed justify-between items-center px-4 bg-[#0a192f] text-gray-300">
       {/* menu */}
       <ul className="hidden md:flex">
         <li className="hover:underline underline-offset-8 decoration-yellow-400 decoration-4">

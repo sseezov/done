@@ -71,7 +71,7 @@ const workStorage = [
     image: calc,
     text: {
       ru: "Данный проект примечателен тем, что здесь нет никаких библиотек, которые обычно используются для того, чтобы сделать калькулятор. 'Сделать калькулятор' - это классическая практика для будущих программистов, не только самоучек, но и обычных студентов IT-факультетов.",
-      en: "This project is notable for the fact that there are no libraries that are usually used to make a calculator. 'Make a calculator' is a classic practice for future programmers, not only self-taught, but also ordinary IT-faculties graduates.",
+      en: "This project is notable for the fact that there are no libraries that are usually used to make a calculator. 'To make a calculator' is a classic practice for future programmers, not only self-taught, but also ordinary IT-faculties graduates.",
     },
   },
   {
@@ -109,7 +109,7 @@ const workStorage = [
     image: me,
     text: {
       ru: "Во время своего обучения я выполнил 500+ задач на freecodecamp.org, несколько модулей на theodinproject.com, решал задачки на codewars (я не так давно открыл этот сайт для себя и сейчас там только 150 баллов рейтинга) и js.checkio (там я упражнялся в тайпскрипте). Также, я свободно владею английским языком и имею отличный набор софт-скиллов.",
-      en: "During my training, I completed 500+ challenges on freecodecamp.org, several modules on theodinproject.com, solved challenges on codewars (I recently discovered this site for myself and that's why now my profile has only 150 rating points) and js.checkio (there I practiced in typescript). Also, I am fluent in English (yes, i understand, that my translation should have some mistakes, but i will improve it a bit later, when someone point me on them) and have an excellent set of soft skills.",
+      en: "During my training, I completed 500+ challenges on freecodecamp.org, several modules on theodinproject.com, solved challenges on codewars (I recently discovered this site for myself and that's why now my profile has only 150 rating points) and js.checkio (there I practiced in typescript). Also, I am fluent in English and have an excellent set of soft skills.",
     },
   },
 ];
