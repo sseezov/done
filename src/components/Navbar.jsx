@@ -6,9 +6,8 @@ import hh2 from "./../assets/HeadHunter_logo_1_1.svg";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
+  let { lang, setLang, nav, setNav } = useContext(LangContext);
   const handleClick = () => setNav(!nav);
-  let { lang, setLang } = useContext(LangContext);
 
   return (
     <div className="fixed w-full h-[70px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">

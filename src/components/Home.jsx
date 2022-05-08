@@ -20,7 +20,7 @@ const Home = () => {
           {translationHome[lang].job}
         </h2>
         <p className="text-[#8892b0] py-4 max-w-[700px]">
-          React, Redux, Typescript, CSS, HTML, Javascript
+          React, Redux, Typescript, CSS, HTML, Javascript, Tailwind
         </p>
         <div className="max-w-[221px]">
           <Link to="about" smooth={true} duration={500}>

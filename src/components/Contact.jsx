@@ -13,7 +13,7 @@ const Contact = () => {
       className="w-full h-screen bg-[#0a192f] flex justify-center items-center"
     >
       <div className="p-12">
-        <p className="text-4xl inline font-bold border-b-4 border-pink-600 text-gray-300">
+        <p className="text-xl md:text-4xl inline font-bold border-b-4 border-pink-600 text-gray-300">
           {translationContacts[lang].contactMe}
         </p>
 
