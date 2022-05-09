@@ -6,11 +6,10 @@ import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import { LangContext } from "./components/context";
-import { SectionsContainer, Section } from "react-fullpage";
+import { SectionsContainer, Section, Header } from "react-fullpage";
 
 const browserLang = window.navigator.language || navigator.userLanguage;
 window.onload = function () {
-  console.log(window.location.href[window.location.href.length - 1]);
   if (window.location.href[window.location.href.length - 1] !== "/") {
     window.location.replace("https://sseezov.ru/");
   }
@@ -32,24 +31,16 @@ function App() {
 
   return (
     <LangContext.Provider value={{ lang, setLang, nav, setNav }}>
-      <Navbar />
+      <Header>
+        <Navbar />
+      </Header>
 
       <SectionsContainer {...options}>
-        <Section>
-          <Home />
-        </Section>
-        <Section>
-          <About />
-        </Section>
-        <Section>
-          <Skills />
-        </Section>
-        <Section>
-          <Work />
-        </Section>
-        <Section>
-          <Contact />
-        </Section>
+        <Home />
+        <About />
+        <Skills />
+        <Work />
+        <Contact />
       </SectionsContainer>
     </LangContext.Provider>
   );
