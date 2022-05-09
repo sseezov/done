@@ -8,7 +8,7 @@ const About = () => {
   let { lang } = useContext(LangContext);
 
   return (
-    <div className="overflow-hidden w-full h-full  bg-[#0a192f] text-gray-300">
+    <div className="w-full h-full pt-[100px] bg-[#0a192f] text-gray-300">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 md:gap-8">
           <div className="md:text-right pb-4 pl-4">
@@ -19,7 +19,7 @@ const About = () => {
               onClick={() => {
                 setToggleAbout(!toggleAbout);
               }}
-              className="md:hidden pl-4 text-2xl font-bold inline text-yellow-200 hover:text-yellow-400"
+              className="md:invisible pl-4 text-2xl font-bold inline text-yellow-200 hover:text-yellow-400"
             >
               {toggleAbout ? ">" : "<"}
             </button>

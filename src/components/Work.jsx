@@ -15,49 +15,50 @@ const Work = () => {
   ) : (
     <div
       name="work"
-      className="w-full pt-16 h-[98vh] text-gray-300 bg-[#0a192f]"
+      className="w-full pt-16 h-[99vh] text-gray-300 bg-[#0a192f]"
     >
       <div className=" max-w-[1100px] m-auto p-4 w-full h-full items-center justify-center">
         <div className="md:ml-[33px]">
-          <p className="text-xl md:text-4xl font-bold inline border-b-4 text-gray-300 border-yellow-400">
-            {translationWork[lang].work}{" "}
-            {index > 0 ? (
-              <button
-                className="visible md:invisible text-yellow-200 hover:text-yellow-400 font-bold text-2xl"
-                onClick={() => {
-                  setIndex(index - 1);
-                  reactSwipeEl.prev();
-                }}
-              >
-                {"<"}
-              </button>
-            ) : (
-              <button
-                disabled
-                className="visible md:invisible text-[#0a192f] font-bold text-2xl"
-              >
-                {"<"}
-              </button>
-            )}
-            {index < workData.length - 1 ? (
-              <button
-                className="visible md:invisible text-yellow-200 hover:text-yellow-400 font-bold text-2xl"
-                onClick={() => {
-                  setIndex(index + 1);
-                  reactSwipeEl.next();
-                }}
-              >
-                {">"}
-              </button>
-            ) : (
-              <button
-                disabled
-                className="visible md:invisible text-[#0a192f] font-bold text-2xl"
-              >
-                {">"}
-              </button>
-            )}
-          </p>
+          <div className="flex flex-row">
+            {" "}
+            <p className="text-xl md:text-4xl font-bold inline border-b-4 text-gray-300 border-yellow-400">
+              {translationWork[lang].work}{" "}
+            </p>
+            <div className="visible md:invisible px-4">
+              {" "}
+              {index > 0 ? (
+                <button
+                  className=" text-yellow-200 hover:text-yellow-400 font-bold text-2xl"
+                  onClick={() => {
+                    setIndex(index - 1);
+                    reactSwipeEl.prev();
+                  }}
+                >
+                  {"<"}
+                </button>
+              ) : (
+                <button disabled className="text-[#0a192f] font-bold text-2xl">
+                  {"<"}
+                </button>
+              )}
+              {index < workData.length - 1 ? (
+                <button
+                  className=" text-yellow-200 hover:text-yellow-400 font-bold text-2xl"
+                  onClick={() => {
+                    setIndex(index + 1);
+                    reactSwipeEl.next();
+                  }}
+                >
+                  {">"}
+                </button>
+              ) : (
+                <button disabled className="text-[#0a192f] font-bold text-2xl">
+                  {">"}
+                </button>
+              )}
+            </div>
+          </div>
+
           <ReactSwipe
             className="carousel"
             swipeOptions={{ continuous: false }}

@@ -24,7 +24,7 @@ const Navbar = () => {
               : "hover:underline underline-offset-8 decoration-yellow-400 decoration-4"
           }
         >
-          <a href="#Home">{translationNavbar[lang].main}</a>
+          <a href="#home">{translationNavbar[lang].main}</a>
         </li>
         <li
           className={
@@ -33,7 +33,7 @@ const Navbar = () => {
               : "hover:underline underline-offset-8 decoration-yellow-400 decoration-4"
           }
         >
-          <a href="#About">{translationNavbar[lang].about}</a>
+          <a href="#about">{translationNavbar[lang].about}</a>
         </li>
         <li
           className={
@@ -42,7 +42,7 @@ const Navbar = () => {
               : "hover:underline underline-offset-8 decoration-yellow-400 decoration-4"
           }
         >
-          <a href="#Skills">{translationNavbar[lang].skills}</a>
+          <a href="#skills">{translationNavbar[lang].skills}</a>
         </li>
         <li
           className={
@@ -51,7 +51,7 @@ const Navbar = () => {
               : "hover:underline underline-offset-8 decoration-yellow-400 decoration-4"
           }
         >
-          <a href="#Work">{translationNavbar[lang].works}</a>
+          <a href="#work">{translationNavbar[lang].works}</a>
         </li>
         <li
           className={
@@ -60,7 +60,7 @@ const Navbar = () => {
               : "hover:underline underline-offset-8 decoration-yellow-400 decoration-4"
           }
         >
-          <a href="#Contacts">{translationNavbar[lang].contacts}</a>
+          <a href="#contacts">{translationNavbar[lang].contacts}</a>
         </li>
       </ul>
       <button
@@ -86,30 +86,30 @@ const Navbar = () => {
         }
       >
         <li className="py-6 text-4xl ">
-          <a onClick={handleClick} href="#Home">
+          <a onClick={handleClick} href="#home">
             {translationNavbar[lang].main}
           </a>
         </li>
         <li className="py-6 text-4xl">
           {" "}
-          <a onClick={handleClick} href="#About">
+          <a onClick={handleClick} href="#about">
             {translationNavbar[lang].about}
           </a>
         </li>
         <li className="py-6 text-4xl">
           {" "}
-          <a onClick={handleClick} href="#Skills">
+          <a onClick={handleClick} href="#skills">
             {translationNavbar[lang].skills}
           </a>
         </li>
         <li className="py-6 text-4xl">
           {" "}
-          <a onClick={handleClick} href="#Work">
+          <a onClick={handleClick} href="#work">
             {translationNavbar[lang].works}
           </a>
         </li>
         <li className="py-6 text-4xl">
-          <a onClick={handleClick} href="#Contacts">
+          <a onClick={handleClick} href="#contacts">
             {translationNavbar[lang].contacts}
           </a>
         </li>

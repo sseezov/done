@@ -21,7 +21,7 @@ function App() {
   const [nav, setNav] = useState(false);
   let options = {
     sectionClassName: "section",
-    anchors: ["Home", "About", "Skills", "Work", "Contacts"],
+    anchors: ["home", "about", "skills", "work", "contacts"],
     scrollBar: false,
     navigation: false,
     verticalAlign: false,

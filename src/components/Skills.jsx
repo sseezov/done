@@ -13,7 +13,7 @@ import { translationSkills } from "./translation";
 const Skills = () => {
   let { lang } = useContext(LangContext);
   return (
-    <div className="w-full h-screen bg-[#0a192f] text-gray-300">
+    <div className="w-full pt-14 first-line:h-screen bg-[#0a192f] text-gray-300">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="px-8">
           <p className="text-xl md:text-4xl font-bold inline border-b-4 border-yellow-400 ">

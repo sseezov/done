@@ -8,7 +8,7 @@ const Home = () => {
 
   return (
     <div className="w-full h-screen bg-[#0a192f]">
-      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
+      <div className="max-w-[1000px] mx-auto p-12 flex flex-col justify-center h-full">
         <p className="text-yellow-400 text-2xl"> {translationHome[lang].hi} </p>
         <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
           {translationHome[lang].name}
@@ -20,7 +20,7 @@ const Home = () => {
           React, Redux, Typescript, CSS, HTML, Javascript, Tailwind
         </p>
         <div className="max-w-[221px]">
-          <a href="#About">
+          <a href="#about">
             <button className="text-white md:min-w-[221px] font-bold group border-2 px-6 py-3 my-2 flex items-center justify-center hover:bg-yellow-400 hover:border-yellow-400">
               {translationHome[lang].next}
               <span className="group-hover:rotate-90 duration-300">
