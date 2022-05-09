@@ -15,6 +15,7 @@
     "loaders.css": "^0.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-fullpage": "^0.1.19",
     "react-icons": "^4.3.1",
     "react-leaflet": "^3.2.5",
     "react-loaders": "^3.0.1",

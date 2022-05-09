@@ -44,8 +44,8 @@ const workStorage = [
     },
     image: church,
     text: {
-      ru: "Это лендинг страница для храма. Я сделал ее, когда учил html и css. Было бы здорово, если бы я мог показать этот сайт в интернете, но его нет, потому что я должен дописать туда еще и панель администратора, чего пока не сделал, да и вообще, переделать все на Реакте. Впрочем, главную задачу сайт выполнил - он стал отличным материалом для тренировки навыков вертски. Также там можно видеть и авторский дизайн.",
-      en: "This is a landing page for a local church. I made it when I was learning html and css. It would be great if I could show this site on the Internet, but it is not there, because I have to add an admin panel there, which I have not done yet, and in general, redo everything in React. However, the site has fulfilled its main task - it has become an excellent material for training my web-design skills.",
+      ru: "Это лендинг страница для храма. Я сделал ее, когда учил html и css. В своем время проект стал отличным материалом для тренировки навыков вертски. Также там можно видеть и авторский дизайн",
+      en: "This is a landing page for a local church. I made it when I was learning html and css. At the right time this site has become an excellent material for training my web-design skills.",
     },
   },
   {

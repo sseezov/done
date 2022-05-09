@@ -3,40 +3,64 @@ import { FaBars, FaTimes, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { LangContext } from "./context";
 import { translationNavbar } from "./translation";
 import hh2 from "./../assets/HeadHunter_logo_1_1.svg";
-import { Link } from "react-scroll";
 
 const Navbar = () => {
   let { lang, setLang, nav, setNav } = useContext(LangContext);
   const handleClick = () => setNav(!nav);
+  const [url, setUrl] = useState("");
+  window.addEventListener("hashchange", function () {
+    setUrl(document.location.href);
+  });
 
   return (
     <div className="w-full h-[70px] flex z-50 fixed justify-between items-center px-4 bg-[#0a192f] text-gray-300">
       {/* menu */}
       <ul className="hidden md:flex">
-        <li className="hover:underline underline-offset-8 decoration-yellow-400 decoration-4">
-          <Link to="home" smooth={true} duration={500}>
-            {translationNavbar[lang].main}
-          </Link>
+        <li
+          className={
+            url[url.length - 2] === "m" ||
+            document.location.href[document.location.href.length - 1] === "/"
+              ? "underline underline-offset-8 decoration-yellow-400 decoration-4"
+              : "hover:underline underline-offset-8 decoration-yellow-400 decoration-4"
+          }
+        >
+          <a href="#Home">{translationNavbar[lang].main}</a>
         </li>
-        <li className="hover:underline underline-offset-8 decoration-yellow-400 decoration-4">
-          <Link to="about" smooth={true} duration={500}>
-            {translationNavbar[lang].about}
-          </Link>
+        <li
+          className={
+            url[url.length - 2] === "u"
+              ? "underline underline-offset-8 decoration-yellow-400 decoration-4"
+              : "hover:underline underline-offset-8 decoration-yellow-400 decoration-4"
+          }
+        >
+          <a href="#About">{translationNavbar[lang].about}</a>
         </li>
-        <li className="hover:underline underline-offset-8 decoration-yellow-400 decoration-4">
-          <Link to="skills" smooth={true} duration={500}>
-            {translationNavbar[lang].skills}
-          </Link>
+        <li
+          className={
+            url[url.length - 2] === "l"
+              ? "underline underline-offset-8 decoration-yellow-400 decoration-4"
+              : "hover:underline underline-offset-8 decoration-yellow-400 decoration-4"
+          }
+        >
+          <a href="#Skills">{translationNavbar[lang].skills}</a>
         </li>
-        <li className="hover:underline underline-offset-8 decoration-yellow-400 decoration-4">
-          <Link to="work" smooth={true} duration={500}>
-            {translationNavbar[lang].works}
-          </Link>
+        <li
+          className={
+            url[url.length - 2] === "r"
+              ? "underline underline-offset-8 decoration-yellow-400 decoration-4"
+              : "hover:underline underline-offset-8 decoration-yellow-400 decoration-4"
+          }
+        >
+          <a href="#Work">{translationNavbar[lang].works}</a>
         </li>
-        <li className="hover:underline underline-offset-8 decoration-yellow-400 decoration-4">
-          <Link to="contact" smooth={true} duration={500}>
-            {translationNavbar[lang].contacts}
-          </Link>
+        <li
+          className={
+            url[url.length - 2] === "t"
+              ? "underline underline-offset-8 decoration-yellow-400 decoration-4"
+              : "hover:underline underline-offset-8 decoration-yellow-400 decoration-4"
+          }
+        >
+          <a href="#Contacts">{translationNavbar[lang].contacts}</a>
         </li>
       </ul>
       <button
@@ -62,32 +86,32 @@ const Navbar = () => {
         }
       >
         <li className="py-6 text-4xl ">
-          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+          <a onClick={handleClick} href="#Home">
             {translationNavbar[lang].main}
-          </Link>
+          </a>
         </li>
         <li className="py-6 text-4xl">
           {" "}
-          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+          <a onClick={handleClick} href="#About">
             {translationNavbar[lang].about}
-          </Link>
+          </a>
         </li>
         <li className="py-6 text-4xl">
           {" "}
-          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
+          <a onClick={handleClick} href="#Skills">
             {translationNavbar[lang].skills}
-          </Link>
+          </a>
         </li>
         <li className="py-6 text-4xl">
           {" "}
-          <Link onClick={handleClick} to="work" smooth={true} duration={500}>
+          <a onClick={handleClick} href="#Work">
             {translationNavbar[lang].works}
-          </Link>
+          </a>
         </li>
         <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+          <a onClick={handleClick} href="#Contacts">
             {translationNavbar[lang].contacts}
-          </Link>
+          </a>
         </li>
       </ul>
 

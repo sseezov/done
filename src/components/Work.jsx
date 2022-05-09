@@ -11,23 +11,59 @@ const Work = () => {
   let reactSwipeEl;
 
   return nav ? (
-    <div name={"work"} className="h-[850px]"></div>
+    <div name="work" className="h-screen"></div>
   ) : (
     <div
       name="work"
-      className="visible w-full m-auto pt-16 md:h-screen text-gray-300 bg-[#0a192f]"
+      className="w-full pt-16 h-[98vh] text-gray-300 bg-[#0a192f]"
     >
-      <div className="max-w-[1100px] m-auto p-4 h-full items-center justify-center">
+      <div className=" max-w-[1100px] m-auto p-4 w-full h-full items-center justify-center">
         <div className="md:ml-[33px]">
           <p className="text-xl md:text-4xl font-bold inline border-b-4 text-gray-300 border-yellow-400">
-            {translationWork[lang].work}
+            {translationWork[lang].work}{" "}
+            {index > 0 ? (
+              <button
+                className="visible md:invisible text-yellow-200 hover:text-yellow-400 font-bold text-2xl"
+                onClick={() => {
+                  setIndex(index - 1);
+                  reactSwipeEl.prev();
+                }}
+              >
+                {"<"}
+              </button>
+            ) : (
+              <button
+                disabled
+                className="visible md:invisible text-[#0a192f] font-bold text-2xl"
+              >
+                {"<"}
+              </button>
+            )}
+            {index < workData.length - 1 ? (
+              <button
+                className="visible md:invisible text-yellow-200 hover:text-yellow-400 font-bold text-2xl"
+                onClick={() => {
+                  setIndex(index + 1);
+                  reactSwipeEl.next();
+                }}
+              >
+                {">"}
+              </button>
+            ) : (
+              <button
+                disabled
+                className="visible md:invisible text-[#0a192f] font-bold text-2xl"
+              >
+                {">"}
+              </button>
+            )}
           </p>
           <ReactSwipe
             className="carousel"
             swipeOptions={{ continuous: false }}
             ref={(el) => (reactSwipeEl = el)}
           >
-            <div className="md:p-8 pt-2 min-h-[400px] md:min-h-[320px] ">
+            <div className="md:p-4 min-h-[330px] md:min-h-[320px] ">
               <a href={workData[0].link} target="_blank" rel="noreferrer">
                 <h1 className="text-xl md:text-2xl font-bold inline text-gray-300 hover:text-purple-300">
                   {workData[0].name[lang]}
@@ -174,7 +210,7 @@ const Work = () => {
           <div className="md:px-2 flex items-center justify-around">
             {index > 0 ? (
               <button
-                className="text-yellow-200 hover:text-yellow-400 font-bold text-6xl"
+                className="invisible md:visible text-yellow-200 hover:text-yellow-400 font-bold text-6xl"
                 onClick={() => {
                   setIndex(index - 1);
                   reactSwipeEl.prev();
@@ -183,7 +219,10 @@ const Work = () => {
                 {"<"}
               </button>
             ) : (
-              <button disabled className="text-[#0a192f] font-bold text-6xl">
+              <button
+                disabled
+                className="invisible md:visible text-[#0a192f] font-bold text-6xl"
+              >
                 {"<"}
               </button>
             )}
@@ -193,7 +232,7 @@ const Work = () => {
 
             {index < workData.length - 1 ? (
               <button
-                className="text-yellow-200 hover:text-yellow-400 font-bold text-6xl"
+                className="invisible md:visible text-yellow-200 hover:text-yellow-400 font-bold text-6xl"
                 onClick={() => {
                   setIndex(index + 1);
                   reactSwipeEl.next();
@@ -202,7 +241,10 @@ const Work = () => {
                 {">"}
               </button>
             ) : (
-              <button disabled className="text-[#0a192f] font-bold text-6xl">
+              <button
+                disabled
+                className="invisible md:visible text-[#0a192f] font-bold text-6xl"
+              >
                 {">"}
               </button>
             )}
