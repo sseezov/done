@@ -11,21 +11,16 @@ const Work = () => {
   let reactSwipeEl;
 
   return nav ? (
-    <div name="work" className="h-screen"></div>
+    <div className="h-screen"></div>
   ) : (
-    <div
-      name="work"
-      className="w-full pt-16 h-[99vh] text-gray-300 bg-[#0a192f]"
-    >
+    <div className="w-full pt-20 h-[99vh] text-gray-300 bg-[#0a192f]">
       <div className=" max-w-[1100px] m-auto p-4 w-full h-full items-center justify-center">
         <div className="md:ml-[33px]">
           <div className="flex flex-row">
-            {" "}
             <p className="text-xl md:text-4xl font-bold inline border-b-4 text-gray-300 border-yellow-400">
-              {translationWork[lang].work}{" "}
+              {translationWork[lang].work}
             </p>
-            <div className="visible md:invisible px-4">
-              {" "}
+            <div className="visible md:invisible px-4 border-b-4 border-[#0a192f]">
               {index > 0 ? (
                 <button
                   className=" text-yellow-200 hover:text-yellow-400 font-bold text-2xl"
@@ -64,7 +59,7 @@ const Work = () => {
             swipeOptions={{ continuous: false }}
             ref={(el) => (reactSwipeEl = el)}
           >
-            <div className="md:p-4 min-h-[330px] md:min-h-[320px] ">
+            <div className="md:p-4 min-h-[320px] ">
               <a href={workData[0].link} target="_blank" rel="noreferrer">
                 <h1 className="text-xl md:text-2xl font-bold inline text-gray-300 hover:text-purple-300">
                   {workData[0].name[lang]}
@@ -82,7 +77,7 @@ const Work = () => {
               </div>
             </div>
 
-            <div className="md:p-8 pt-2 min-h-[500px] md:min-h-[370px] ">
+            <div className="md:p-4 min-h-[320px] ">
               <a href={workData[1].link} target="_blank" rel="noreferrer">
                 <h1 className="text-xl md:text-2xl font-bold inline text-gray-300 hover:text-purple-300">
                   {workData[1].name[lang]}
@@ -100,7 +95,7 @@ const Work = () => {
               </div>
             </div>
 
-            <div className="md:p-8 pt-2 min-h-[500px] md:min-h-[370px] ">
+            <div className="md:p-4 min-h-[320px]">
               <a href={workData[2].link} target="_blank" rel="noreferrer">
                 <h1 className="text-xl md:text-2xl font-bold inline text-gray-300 hover:text-purple-300">
                   {workData[2].name[lang]}
@@ -118,7 +113,7 @@ const Work = () => {
               </div>
             </div>
 
-            <div className="md:p-8 pt-2 min-h-[500px] md:min-h-[370px] ">
+            <div className="md:p-4 min-h-[320px]">
               <a href={workData[3].link} target="_blank" rel="noreferrer">
                 <h1 className="text-xl md:text-2xl font-bold inline text-gray-300 hover:text-purple-300">
                   {workData[3].name[lang]}
@@ -136,7 +131,7 @@ const Work = () => {
               </div>
             </div>
 
-            <div className="md:p-8 pt-2 min-h-[500px] md:min-h-[370px] ">
+            <div className="md:p-4 min-h-[320px]">
               <a href={workData[4].link} target="_blank" rel="noreferrer">
                 <h1 className="text-xl md:text-2xl font-bold inline text-gray-300 hover:text-purple-300">
                   {workData[4].name[lang]}
@@ -154,7 +149,7 @@ const Work = () => {
               </div>
             </div>
 
-            <div className="md:p-8 pt-2 min-h-[500px] md:min-h-[370px] ">
+            <div className="md:p-4 min-h-[320px]">
               <a href={workData[5].link} target="_blank" rel="noreferrer">
                 <h1 className="text-xl md:text-2xl font-bold inline text-gray-300 hover:text-purple-300">
                   {workData[5].name[lang]}
@@ -172,7 +167,7 @@ const Work = () => {
               </div>
             </div>
 
-            <div className="md:p-8 pt-2 min-h-[500px] md:min-h-[370px] ">
+            <div className="md:p-4 min-h-[320px]">
               <a href={workData[6].link} target="_blank" rel="noreferrer">
                 <h1 className="text-xl md:text-2xl font-bold inline text-gray-300 hover:text-purple-300">
                   {workData[6].name[lang]}
@@ -190,7 +185,7 @@ const Work = () => {
               </div>
             </div>
 
-            <div className="md:p-8 min-h-[500px] md:min-h-[370px] ">
+            <div className="md:p-4 min-h-[320px]">
               <a href={workData[7].link} target="_blank" rel="noreferrer">
                 <h1 className="text-xl md:text-2xl font-bold inline text-gray-300 hover:text-purple-300">
                   {workData[7].name[lang]}
