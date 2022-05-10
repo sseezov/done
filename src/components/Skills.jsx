@@ -5,7 +5,7 @@ import ReactImg from "../assets/react.png";
 import Node from "../assets/node.png";
 import TypeScript from "../assets/Typescript_logo_2020.svg.png";
 import GitHub from "../assets/github.png";
-import Bootstrap from "../assets/bootstrap-600x600.jpg";
+import Bootstrap from "../assets/bootstrap-600x600.avif";
 import ReduxImg from "../assets/react — копия.png";
 import { LangContext } from "./context";
 import { translationSkills } from "./translation";

@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import MyPic from "../assets/UTgWXhK6jQg.jpg";
+import MyPic from "../assets/UTgWXhK6jQg.avif";
 import { LangContext } from "./context";
 import { translationAbout } from "./translation";
 import { Section } from "react-fullpage";
@@ -10,45 +10,40 @@ const About = () => {
 
   return (
     <Section>
-      <div
-        name="about"
-        className="w-full h-[99vh] text-gray-200 bg-gradient-to-r from-black via-indigo-900 to-fuchsia-500"
-      >
+      <div className="w-full h-[98vh] mt-2 text-gray-200 bg-gradient-to-r from-black via-indigo-900 to-fuchsia-500">
         <div className="flex flex-col justify-center items-center w-full h-full">
           <div className="max-w-[1000px] w-full grid grid-cols-2 md:gap-6">
-            <div className="text-right pb-4">
-              <p className="text-xl md:text-4xl ml-20 font-bold inline border-b-4 border-yellow-400">
+            <div className="text-right md:pb-4 px-1">
+              <p className="text-xl md:text-4xl m-auto font-bold inline border-b-4 border-yellow-400">
                 {translationAbout[lang].about}
               </p>
             </div>
-            <div className="text-left pb-4">
+            <div className="text-left ">
               <button
                 onClick={() => {
                   setToggleAbout(!toggleAbout);
                 }}
-                className="text-2xl pl-4 pb-2 md:text-4xl font-bold inline text-yellow-200 hover:text-yellow-400"
+                className="text-2xl pl-5 pb-2 md:text-4xl font-bold inline text-yellow-200 hover:text-yellow-400"
               >
                 {toggleAbout ? ">" : "<"}
               </button>
             </div>
           </div>
           <div className="max-w-[1000px] w-full grid sm:grid-cols-2 md:gap-8 md:px-4">
-            <div className="sm:text-right">
+            <div className="sm:text-right ">
               <img
-                className="m-auto flex items-center justify-around md:float-right w-[160px] rounded-xl  sm:w-[180px] md:w-[280px]"
+                className="m-auto shadow-lg shadow-[#795bad98] flex items-center justify-around md:float-right w-[160px] sm:w-[180px] md:w-[280px]"
                 src={MyPic}
                 alt={translationAbout[lang].about}
               />
             </div>
 
-            <div>
+            <div className="md:min-h-[420px] px-4 float-left text-base sm:text-base md:text-xl pb-4">
               {toggleAbout ? (
-                <p className="px-4 float-left text-base sm:text-base md:text-xl">
-                  {translationAbout[lang].text1}
-                </p>
+                <p>{translationAbout[lang].text1}</p>
               ) : (
                 <div>
-                  <p className="px-4 float-left text-base sm:text-base md:text-xl pb-4">
+                  <p>
                     {translationAbout[lang].text2a}
                     <a
                       rel="noreferrer"
@@ -105,7 +100,7 @@ const About = () => {
                     </a>
                     .
                   </p>
-                  <p className="px-4 float-left text-base sm:text-base md:text-xl">
+                  <p className="pt-2">
                     {translationAbout[lang].text2f}
                     <strong className="text-red-600">
                       {translationAbout[lang].text2g}

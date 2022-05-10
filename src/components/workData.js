@@ -1,11 +1,11 @@
-import samurai from "./../assets/samurai-network.png";
-import calc from "./../assets/react-calc.png";
-import weather from "./../assets/weather cli.png";
-import church from "./../assets/churchsite.png";
-import birthday from "./../assets/birhtday.png";
-import rec from "./../assets/recursion2.jpg";
-import rest from "./../assets/rest.png";
-import me from "./../assets/me.png";
+import samurai from "./../assets/samurai-network.avif";
+import calc from "./../assets/react-calc.avif";
+import weather from "./../assets/weather-cli.avif";
+import church from "./../assets/churchsite.avif";
+import birthday from "./../assets/birhtday.avif";
+import rec from "./../assets/recursion2.avif";
+import rest from "./../assets/rest.avif";
+import me from "./../assets/me.avif";
 
 const workStorage = [
   {
@@ -44,7 +44,7 @@ const workStorage = [
     },
     image: church,
     text: {
-      ru: "Это лендинг страница для храма. Я сделал ее, когда учил html и css. В своем время проект стал отличным материалом для тренировки навыков вертски. Также там можно видеть и авторский дизайн",
+      ru: "Это лендинг страница для храма. Я сделал ее, когда учил html и css. В своем время проект стал отличным материалом для тренировки навыков вертски. Также там можно видеть и авторский дизайн.",
       en: "This is a landing page for a local church. I made it when I was learning html and css. At the right time this site has become an excellent material for training my web-design skills.",
     },
   },

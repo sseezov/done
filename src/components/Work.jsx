@@ -69,13 +69,13 @@ const Work = () => {
                     {workData[0].name[lang]}
                   </h1>
                 </a>
-                <div className="md:flex md:flex-row">
+                <div className="md:flex md:flex-row p-2">
                   <img
-                    className="m-auto max-h-[200px] md:max-h-[250px] rounded-xl p-2 md:hover:scale-125 duration-500"
+                    className="m-auto shadow-lg shadow-[#795bad98] max-h-[200px] md:max-h-[250px] md:hover:scale-110 duration-500"
                     src={workData[0].image}
                     alt={workData[0].name[lang]}
                   />
-                  <p className="text-base md:text-xl text-gray-300 md:p-2">
+                  <p className="text-base md:text-xl px-2 text-gray-300">
                     {workData[0].text[lang]}
                   </p>
                 </div>
@@ -87,13 +87,13 @@ const Work = () => {
                     {workData[1].name[lang]}
                   </h1>
                 </a>
-                <div className="md:flex md:flex-row">
+                <div className="md:flex md:flex-row p-2">
                   <img
-                    className="m-auto max-w-[280px] max-h-[200px] md:max-h-[250px] rounded-xl p-2 md:hover:scale-125 duration-500"
+                    className="m-auto max-w-[280px] max-h-[200px] md:max-h-[250px] shadow-lg shadow-[#795bad98] md:hover:scale-110 duration-500"
                     src={workData[1].image}
                     alt={workData[1].name[lang]}
                   />
-                  <p className="text-base md:text-xl text-gray-300 md:p-2">
+                  <p className="text-base md:text-xl text-gray-300 px-2">
                     {workData[1].text[lang]}
                   </p>
                 </div>
@@ -107,7 +107,7 @@ const Work = () => {
                 </a>
                 <div className="md:flex md:flex-row">
                   <img
-                    className="m-auto max-w-[280px] max-h-[200px] md:max-h-[250px] rounded-xl p-2 md:hover:scale-125 duration-500"
+                    className="m-auto max-w-[280px] max-h-[200px] md:max-h-[250px] shadow-lg shadow-[#795bad98] md:hover:scale-110 duration-500"
                     src={workData[2].image}
                     alt={workData[2].name[lang]}
                   />
@@ -125,7 +125,7 @@ const Work = () => {
                 </a>
                 <div className="md:flex md:flex-row">
                   <img
-                    className="m-auto max-w-[280px] max-h-[200px] md:max-h-[250px] rounded-xl p-2 md:hover:scale-125 duration-500"
+                    className="m-auto max-w-[280px] max-h-[200px] md:max-h-[250px] shadow-lg shadow-[#795bad98] md:hover:scale-110 duration-500"
                     src={workData[3].image}
                     alt={workData[3].name[lang]}
                   />
@@ -143,7 +143,7 @@ const Work = () => {
                 </a>
                 <div className="md:flex md:flex-row">
                   <img
-                    className="m-auto max-w-[280px] max-h-[200px] md:max-h-[250px] rounded-xl p-2 md:hover:scale-125 duration-500"
+                    className="m-auto max-w-[280px] max-h-[200px] md:max-h-[250px] shadow-lg shadow-[#795bad98] md:hover:scale-110 duration-500"
                     src={workData[4].image}
                     alt={workData[4].name[lang]}
                   />
@@ -161,7 +161,7 @@ const Work = () => {
                 </a>
                 <div className="md:flex md:flex-row">
                   <img
-                    className="m-auto max-w-[280px] max-h-[200px] md:max-h-[250px] rounded-xl p-2 md:hover:scale-125 duration-500"
+                    className="m-auto max-w-[280px] max-h-[200px] md:max-h-[250px] shadow-lg shadow-[#795bad98] md:hover:scale-110 duration-500"
                     src={workData[5].image}
                     alt={workData[5].name[lang]}
                   />
@@ -179,7 +179,7 @@ const Work = () => {
                 </a>
                 <div className="md:flex md:flex-row">
                   <img
-                    className="m-auto max-w-[280px] max-h-[200px] md:max-h-[250px] rounded-xl p-2 md:hover:scale-125 duration-500"
+                    className="m-auto max-w-[280px] max-h-[200px] md:max-h-[250px] shadow-lg shadow-[#795bad98] md:hover:scale-110 duration-500"
                     src={workData[6].image}
                     alt={workData[6].name[lang]}
                   />
@@ -197,7 +197,7 @@ const Work = () => {
                 </a>
                 <div className="md:flex md:flex-row">
                   <img
-                    className="m-auto max-w-[280px] max-h-[200px] md:max-h-[250px] rounded-xl px-2 md:hover:scale-125 duration-500"
+                    className="m-auto max-w-[280px] max-h-[200px] md:max-h-[250px] shadow-lg shadow-[#795bad98] md:hover:scale-110 duration-500"
                     src={workData[7].image}
                     alt={workData[7].name[lang]}
                   />
