@@ -3,7 +3,7 @@ import calc from "./../assets/react-calc.png";
 import weather from "./../assets/weather cli.png";
 import church from "./../assets/churchsite.png";
 import birthday from "./../assets/birhtday.png";
-import rec from "./../assets/recursion.jpg";
+import rec from "./../assets/recursion2.jpg";
 import rest from "./../assets/rest.png";
 import me from "./../assets/me.png";
 

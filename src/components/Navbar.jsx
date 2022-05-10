@@ -13,7 +13,7 @@ const Navbar = () => {
   });
 
   return (
-    <div className="w-full h-[70px] flex z-50 fixed justify-between items-center px-4 bg-[#0a192f] text-gray-300">
+    <div className="w-full h-[70px] flex opacity-95 z-50 fixed justify-between items-center px-4 bg-gradient-to-r from-black via-indigo-900 to-fuchsia-500 text-gray-300">
       {/* menu */}
       <ul className="hidden md:flex">
         <li
@@ -67,7 +67,7 @@ const Navbar = () => {
         onClick={() => {
           setLang(lang === "en" ? "ru" : "en");
         }}
-        className=" text-gray-300  flex flex-row p-2 md:hover:underline underline-offset-8 decoration-yellow-400 decoration-4"
+        className=" text-white flex flex-row p-2 md:hover:underline underline-offset-8 decoration-yellow-400 decoration-4"
       >
         {translationNavbar[lang].switch}
       </button>
@@ -82,7 +82,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full opacity-100 h-screen bg-gradient-to-r from-black via-indigo-900 to-fuchsia-500 flex flex-col justify-center items-center"
         }
       >
         <li className="py-6 text-4xl ">
@@ -120,7 +120,7 @@ const Navbar = () => {
         <ul>
           <li className="w-[170px] h-[60px] flex justify-between items-center ml-[-110px] hover:ml-[-10px] duration-300 bg-[#d40e18]">
             <a
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full text-gray-200"
               href="https://kemerovo.hh.ru/resume/abdb3d94ff09cd003a0039ed1f7a345278784b"
             >
               Headhunter{" "}
@@ -134,7 +134,7 @@ const Navbar = () => {
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
             <a
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full text-gray-200"
               href="https://github.com/sseezov"
             >
               Github <FaGithub size={30} />
@@ -142,7 +142,7 @@ const Navbar = () => {
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full text-gray-200"
               href="https://www.linkedin.com/in/sergey-sizov-2bbb21235"
             >
               Linkedin <FaLinkedinIn size={30} />

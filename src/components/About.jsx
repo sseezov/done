@@ -10,7 +10,10 @@ const About = () => {
 
   return (
     <Section>
-      <div name="about" className="w-full h-[99vh] bg-[#0a192f] text-gray-300">
+      <div
+        name="about"
+        className="w-full h-[99vh] text-gray-200 bg-gradient-to-r from-black via-indigo-900 to-fuchsia-500"
+      >
         <div className="flex flex-col justify-center items-center w-full h-full">
           <div className="max-w-[1000px] w-full grid grid-cols-2 md:gap-6">
             <div className="text-right pb-4">
@@ -23,7 +26,7 @@ const About = () => {
                 onClick={() => {
                   setToggleAbout(!toggleAbout);
                 }}
-                className="text-xl pl-4 md:text-4xl font-bold inline text-yellow-200 hover:text-yellow-400 border-b-4 border-[#0a192f]"
+                className="text-2xl pl-4 pb-2 md:text-4xl font-bold inline text-yellow-200 hover:text-yellow-400"
               >
                 {toggleAbout ? ">" : "<"}
               </button>
@@ -50,7 +53,7 @@ const About = () => {
                     <a
                       rel="noreferrer"
                       target="_blank"
-                      className="text-purple-300"
+                      className="text-purple-200"
                       href="https://www.freecodecamp.org/fcc0a4acf66-9b9c-4c1b-9064-83662a3c122a"
                     >
                       freecodecamp.org
@@ -59,7 +62,7 @@ const About = () => {
                     <a
                       rel="noreferrer"
                       target="_blank"
-                      className="text-purple-300"
+                      className="text-purple-200"
                       href="https://www.theodinproject.com/"
                     >
                       theodinproject.com
@@ -68,7 +71,7 @@ const About = () => {
                     <a
                       rel="noreferrer"
                       target="_blank"
-                      className="text-purple-300"
+                      className="text-purple-200"
                       href="https://www.youtube.com/channel/UCTW0FUhT0m-Bqg2trTbSs0g"
                     >
                       it-kamasutra{" "}
@@ -77,7 +80,7 @@ const About = () => {
                     <a
                       rel="noreferrer"
                       target="_blank"
-                      className="text-purple-300"
+                      className="text-purple-200"
                       href="https://www.codewars.com/users/sseezov"
                     >
                       codewars
@@ -86,7 +89,7 @@ const About = () => {
                     <a
                       rel="noreferrer"
                       target="_blank"
-                      className="text-purple-300"
+                      className="text-purple-200"
                       href="https://js.checkio.org/user/Sergej_Sizov/"
                     >
                       ts.checkio
@@ -95,10 +98,10 @@ const About = () => {
                     <a
                       rel="noreferrer"
                       target="_blank"
-                      className="text-purple-300"
+                      className="text-purple-200"
                       href="https://github.com/sseezov"
                     >
-                      git
+                      github
                     </a>
                     .
                   </p>

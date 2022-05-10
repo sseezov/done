@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import { LangContext } from "./components/context";
-import { SectionsContainer, Section, Header } from "react-fullpage";
+import { SectionsContainer, Header } from "react-fullpage";
 
 const browserLang = window.navigator.language || navigator.userLanguage;
 window.onload = function () {

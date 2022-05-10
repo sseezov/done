@@ -15,7 +15,7 @@ const Skills = () => {
   let { lang } = useContext(LangContext);
   return (
     <Section>
-      <div className="w-full pt-16 first-line:h-screen md:h-screen bg-[#0a192f] text-gray-300">
+      <div className="w-full pt-16 text-gray-200 first-line:h-screen md:h-screen bg-gradient-to-r from-black via-indigo-900 to-fuchsia-500">
         <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
           <div className="px-8">
             <p className="text-xl md:text-4xl font-bold inline border-b-4 border-yellow-400 ">
@@ -27,35 +27,35 @@ const Skills = () => {
           </div>
 
           <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
-            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <div className="shadow-md shadow-[#593f8598] hover:scale-110 duration-500">
               <img className="w-10 mx-auto" src={JavaScript} alt="HTML icon" />
               <p className="my-4">JAVASCRIPT</p>
             </div>
-            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <div className="shadow-md shadow-[#593f8598] hover:scale-110 duration-500">
               <img className="w-10 mx-auto" src={ReactImg} alt="HTML icon" />
               <p className="my-4">REACT</p>
             </div>
-            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <div className="shadow-md shadow-[#593f8598] hover:scale-110 duration-500">
               <img className="w-10 mx-auto" src={GitHub} alt="HTML icon" />
               <p className="my-4">GIT</p>
             </div>
-            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <div className="shadow-md shadow-[#593f8598] hover:scale-110 duration-500">
               <img className="w-10 mx-auto" src={Node} alt="HTML icon" />
               <p className="my-4">NODE JS</p>
             </div>
-            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <div className="shadow-md shadow-[#593f8598] hover:scale-110 duration-500">
               <img className="w-10 mx-auto" src={TypeScript} alt="HTML icon" />
               <p className="my-4">TYPESCRIPT</p>
             </div>
-            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <div className="shadow-md shadow-[#593f8598] hover:scale-110 duration-500">
               <img className="w-10 mx-auto" src={Bootstrap} alt="HTML icon" />
               <p className="my-4">BOOTSTRAP</p>
             </div>
-            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <div className="shadow-md shadow-[#593f8598] hover:scale-110 duration-500">
               <img className="w-10 mx-auto" src={Tailwind} alt="HTML icon" />
               <p className="my-4">TAILWIND</p>
             </div>
-            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <div className="shadow-md shadow-[#593f8598] hover:scale-110 duration-500">
               <img className="w-10 mx-auto" src={ReduxImg} alt="HTML icon" />
               <p className="my-4">REDUX</p>
             </div>

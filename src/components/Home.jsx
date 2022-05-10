@@ -9,19 +9,19 @@ const Home = () => {
 
   return (
     <Section>
-      <div className="w-full h-screen bg-[#0a192f]">
+      <div className="w-full h-screen bg-gradient-to-r from-black via-indigo-900 to-fuchsia-500">
         <div className="max-w-[1000px] mx-auto p-12 flex flex-col justify-center h-full">
           <p className="text-yellow-400 text-2xl">
             {" "}
             {translationHome[lang].hi}{" "}
           </p>
-          <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
+          <h1 className="text-4xl sm:text-7xl font-bold text-[#e8edfd]">
             {translationHome[lang].name}
           </h1>
-          <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]">
+          <h2 className="text-4xl sm:text-7xl font-bold text-[#a8b3d4]">
             {translationHome[lang].job}
           </h2>
-          <p className="text-[#8892b0] py-4 max-w-[700px]">
+          <p className="text-[#a2accb] py-4 max-w-[700px]">
             React, Redux, Typescript, CSS, HTML, Javascript, Tailwind
           </p>
           <div className="max-w-[221px]">

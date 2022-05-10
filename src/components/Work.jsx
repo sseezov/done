@@ -17,17 +17,17 @@ const Work = () => {
     </Section>
   ) : (
     <Section>
-      <div className="w-full pt-20 h-[99vh] text-gray-300 bg-[#0a192f]">
+      <div className="w-full pt-20 h-[99vh] text-gray-200 bg-gradient-to-r from-black via-indigo-900 to-fuchsia-500">
         <div className=" max-w-[1100px] m-auto p-4 w-full h-full items-center justify-center">
           <div className="md:ml-[33px]">
             <div className="flex flex-row">
-              <p className="text-xl md:text-4xl font-bold inline border-b-4 text-gray-300 border-yellow-400">
+              <p className="text-xl md:text-4xl font-bold inline border-b-4 text-gray-200 border-yellow-400">
                 {translationWork[lang].work}
               </p>
-              <div className="visible md:invisible px-4 border-b-4 border-[#0a192f]">
+              <div className="visible md:invisible px-4">
                 {index > 0 ? (
                   <button
-                    className=" text-yellow-200 hover:text-yellow-400 font-bold text-2xl"
+                    className=" text-yellow-200 hover:text-yellow-400 font-bold text-4xl"
                     onClick={() => {
                       setIndex(index - 1);
                       reactSwipeEl.prev();
@@ -36,16 +36,13 @@ const Work = () => {
                     {"<"}
                   </button>
                 ) : (
-                  <button
-                    disabled
-                    className="text-[#0a192f] font-bold text-2xl"
-                  >
+                  <button disabled className="invisible font-bold text-4xl">
                     {"<"}
                   </button>
                 )}
                 {index < workData.length - 1 ? (
                   <button
-                    className=" text-yellow-200 hover:text-yellow-400 font-bold text-2xl"
+                    className=" text-yellow-200 hover:text-yellow-400 font-bold text-4xl"
                     onClick={() => {
                       setIndex(index + 1);
                       reactSwipeEl.next();
@@ -54,10 +51,7 @@ const Work = () => {
                     {">"}
                   </button>
                 ) : (
-                  <button
-                    disabled
-                    className="text-[#0a192f] font-bold text-2xl"
-                  >
+                  <button disabled className="invisible font-bold text-4xl">
                     {">"}
                   </button>
                 )}
@@ -225,10 +219,7 @@ const Work = () => {
                   {"<"}
                 </button>
               ) : (
-                <button
-                  disabled
-                  className="invisible md:visible text-[#0a192f] font-bold text-6xl"
-                >
+                <button disabled className="invisible font-bold text-6xl">
                   {"<"}
                 </button>
               )}
@@ -247,10 +238,7 @@ const Work = () => {
                   {">"}
                 </button>
               ) : (
-                <button
-                  disabled
-                  className="invisible md:visible text-[#0a192f] font-bold text-6xl"
-                >
+                <button disabled className="invisible font-bold text-6xl">
                   {">"}
                 </button>
               )}
