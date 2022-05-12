@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import MyPic from "../assets/UTgWXhK6jQg.avif";
+import MyPic from "../assets/UTgWXhK6jQg.jpg";
 import { LangContext } from "./context";
 import { translationAbout } from "./translation";
 import { Section } from "react-fullpage";

@@ -1,11 +1,11 @@
-import samurai from "./../assets/samurai-network.avif";
-import calc from "./../assets/react-calc.avif";
-import weather from "./../assets/weather-cli.avif";
-import church from "./../assets/churchsite.avif";
-import birthday from "./../assets/birhtday.avif";
-import rec from "./../assets/recursion2.avif";
-import rest from "./../assets/rest.avif";
-import me from "./../assets/me.avif";
+import samurai from "./../assets/samurai-network.png";
+import calc from "./../assets/react-calc.png";
+import weather from "./../assets/weather-cli.png";
+import church from "./../assets/churchsite.png";
+import birthday from "./../assets/birhtday.png";
+import rec from "./../assets/recursion2.jpg";
+import rest from "./../assets/rest.png";
+import me from "./../assets/me.png";
 
 const workStorage = [
   {
